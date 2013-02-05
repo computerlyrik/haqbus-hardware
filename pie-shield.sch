@@ -1728,9 +1728,9 @@ The GPIO Connector (P5):&lt;br&gt;
 <pinref part="OK2" gate="A" pin="VO"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GPIO30"/>
-<wire x1="-142.24" y1="33.02" x2="-149.86" y2="33.02" width="0.1524" layer="91"/>
-<label x="-157.48" y="33.02" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="GPIO15,UART0_RXD"/>
+<wire x1="-86.36" y1="63.5" x2="-73.66" y2="63.5" width="0.1524" layer="91"/>
+<label x="-73.66" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXD_AL" class="0">
@@ -1742,9 +1742,9 @@ The GPIO Connector (P5):&lt;br&gt;
 <pinref part="OK1" gate="A" pin="C"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GPIO29"/>
-<wire x1="-86.36" y1="35.56" x2="-73.66" y2="35.56" width="0.1524" layer="91"/>
-<label x="-73.66" y="35.56" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="GPIO14,UART0_TXD"/>
+<wire x1="-86.36" y1="66.04" x2="-73.66" y2="66.04" width="0.1524" layer="91"/>
+<label x="-73.66" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -1811,9 +1811,9 @@ The GPIO Connector (P5):&lt;br&gt;
 <label x="-27.94" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GPIO31"/>
-<wire x1="-86.36" y1="33.02" x2="-73.66" y2="33.02" width="0.1524" layer="91"/>
-<label x="-73.66" y="33.02" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="GPIO17"/>
+<wire x1="-142.24" y1="60.96" x2="-149.86" y2="60.96" width="0.1524" layer="91"/>
+<label x="-160.02" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
