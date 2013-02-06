@@ -1506,7 +1506,7 @@ The GPIO Connector (P5):&lt;br&gt;
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
 <part name="P+12" library="supply1" deviceset="+12V" device=""/>
 <part name="OK1" library="optocoupler" deviceset="HCPL0601" device=""/>
-<part name="OK2" library="optocoupler" deviceset="HCPL0601" device=""/>
+<part name="OK2" library="optocoupler" deviceset="HCPL0601" device="" value="FOD060L"/>
 <part name="C24" library="SparkFun" deviceset="CAP" device="0805" value="100nF"/>
 <part name="C25" library="SparkFun" deviceset="CAP" device="0805" value="100nF"/>
 <part name="R19" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="330R"/>
@@ -1770,25 +1770,6 @@ The GPIO Connector (P5):&lt;br&gt;
 </net>
 <net name="+5V" class="0">
 <segment>
-<wire x1="2.54" y1="22.86" x2="2.54" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="73.66" x2="-5.08" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="78.74" x2="-33.02" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="50.8" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="55.88" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="55.88" x2="-33.02" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="78.74" x2="-33.02" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="20.32" x2="-10.16" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="20.32" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
-<junction x="2.54" y="20.32"/>
-<junction x="-10.16" y="55.88"/>
-<pinref part="OK2" gate="A" pin="VCC"/>
-<pinref part="C24" gate="G$1" pin="2"/>
-<pinref part="OK2" gate="A" pin="VE"/>
-<pinref part="R22" gate="G$1" pin="1"/>
-<pinref part="R19" gate="G$1" pin="1"/>
-<label x="-33.02" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="5V@2"/>
 <pinref part="U$2" gate="G$1" pin="5V@4"/>
 <wire x1="-73.66" y1="73.66" x2="-86.36" y2="73.66" width="0.1524" layer="91"/>
@@ -1852,6 +1833,46 @@ The GPIO Connector (P5):&lt;br&gt;
 <pinref part="U$2" gate="G$1" pin="GND@6"/>
 <wire x1="-86.36" y1="68.58" x2="-73.66" y2="68.58" width="0.1524" layer="91"/>
 <label x="-73.66" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-139.7" y1="43.18" x2="-152.4" y2="43.18" width="0.1524" layer="91"/>
+<label x="-154.94" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+3.3V" class="0">
+<segment>
+<pinref part="OK2" gate="A" pin="VE"/>
+<wire x1="2.54" y1="22.86" x2="2.54" y2="20.32" width="0.1524" layer="91"/>
+<junction x="2.54" y="20.32"/>
+<pinref part="OK2" gate="A" pin="VCC"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="20.32" x2="-10.16" y2="20.32" width="0.1524" layer="91"/>
+<label x="-12.7" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="3V3@1"/>
+<wire x1="-142.24" y1="73.66" x2="-149.86" y2="73.66" width="0.1524" layer="91"/>
+<label x="-154.94" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="3V3@17"/>
+<wire x1="-142.24" y1="53.34" x2="-149.86" y2="53.34" width="0.1524" layer="91"/>
+<label x="-154.94" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="3V3@P5_2"/>
+<wire x1="-86.36" y1="38.1" x2="-76.2" y2="38.1" width="0.1524" layer="91"/>
+<label x="-76.2" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-5.08" y1="73.66" x2="-5.08" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="78.74" x2="-33.02" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="50.8" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="55.88" x2="-33.02" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="78.74" x2="-33.02" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<label x="-33.02" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
